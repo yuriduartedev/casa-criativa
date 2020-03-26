@@ -1,13 +1,18 @@
+/* Estilos Global */
 body {
   /*
     CSS
-    CCascading StyleSheet
+    Cascading StyleSheet
   */
   background: #e5e5e5;
   color: #25282b;
 
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+}
+
+body.hideScroll {
+  overflow: hidden;
 }
 
 a {
@@ -26,6 +31,31 @@ p .description {
   letter-spacing: 0.1px
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  background: #ff5E84;
+
+  width: 150px;
+  height: 40px;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.20);
+}
+
+.button:hover {
+  background-color: #0984e3;
+  text-decoration: none;
+}
+
+/* Estilos padrão */
+
 #container {
   width: 80%;
   max-width: 980px;
@@ -36,7 +66,8 @@ p .description {
 
 #intro {
   width: 300px;
-  margin-right: 20px;
+
+  margin-right: 64px;
 }
 
 main {
@@ -67,20 +98,6 @@ button {
 button:hover {
   text-decoration: underline;
 }
-
-button.fat {
-  color: white;
-  background: #ff5E84;
-  width: 150px;
-  height: 40px;
-  border-radius: 6px;
-  box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.20);
-}
-
-button.fat:hover {
-  text-decoration: none;
-}
-
 
 footer {
   text-align: center;
@@ -132,9 +149,9 @@ footer a {
 
   position: absolute;
   top: 0;
-
-  width: 100vw;
-  height: 100vh;
+  bottom: 0;
+  right: 0;
+  left: 0;
 
   display: flex;
   justify-content: center;
@@ -142,8 +159,12 @@ footer a {
   transition: all 400ms;
 }
 
+#modal.addScroll {
+  overflow: auto;
+}
+
 #modal .content {
-  margin-top: 128px;
+  margin-top: 5%;
 
   color: white;
 }
@@ -157,7 +178,7 @@ footer a {
   width: 80%;
   max-width: 800px;
 
-  margin: 0 auto;
+  margin: 0 auto 5%;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -248,4 +269,70 @@ form button:hover {
 #modal.hide {
   opacity: 0;
   visibility: hidden;
+}
+
+/* Ideias.HTML */
+#page-ideias #container {
+  display: block;
+}
+
+#page-ideias header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#page-ideias nav {
+  display: flex;
+  align-items: center;
+}
+
+#page-ideias nav li {
+  list-style-type: none;
+
+  margin-right: 16px;
+}
+
+#page-ideias nav li:last-child {
+  margin: 0;
+}
+
+#page-ideias nav li a {
+  color: #25282b;
+}
+
+#page-ideias nav li a.button {
+  color: white;
+}
+
+#page-ideias section#title {
+  text-align: center;
+}
+
+#page-ideias section#title p {
+  opacity: 0.7;
+  margin: 0;
+}
+
+#page-ideias section#title h1 {
+  margin: 0;
+
+  font-size: 28px;
+}
+
+
+#page-ideias section#ideas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+#page-ideias section#ideas .idea {
+  margin: 0;
+}
+
+#page-ideias section#ideas,
+#page-ideias section#title,
+#page-ideias footer {
+  margin-top: 64px;
 }
