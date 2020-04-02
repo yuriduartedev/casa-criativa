@@ -24,6 +24,7 @@ function checkFields(event)  {
     "link",
   ]
 
+
   const isEmpty = valuesToChek.find(function (value) {
     const checkIsString = typeof event.target[value].value === "string"
     const checkIfIsEmpty = !event.target[value].value.trim();
@@ -36,5 +37,16 @@ function checkFields(event)  {
     event.preventDefault();
     alert('Por favor preencha todos os campos!')
   }
+}
+
+function getId(event) {
+  const id = event.target.id;
+
+  // db.run(`DELETE FROM ideas WHERE id = ?`, [id], function (err) {
+  //   if (err) return console.log(err);
+
+  //   console.log("Ideia deletada com sucesso!", this);
+  // })
+  console.log(id);
 
 }
