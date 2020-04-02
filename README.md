@@ -82,7 +82,7 @@ $ yarn dev
 
 Essas são as tecnologias utilizadas nesse projeto
 
-💻- **Backend:** [Node.js](https://nodejs.org/en/), [Express](https://expressjs.com/pt-br/), [SQLite3](https://www.sqlite.org/index.html), [Nunjucks](https://mozilla.github.io/nunjucks/), [JavaScirpt](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript), 
+💻- [Node.js](https://nodejs.org/en/), [Express](https://expressjs.com/pt-br/), [SQLite3](https://www.sqlite.org/index.html), [Nunjucks](https://mozilla.github.io/nunjucks/), [JavaScirpt](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript), 
 
 ## 📝 License
 
